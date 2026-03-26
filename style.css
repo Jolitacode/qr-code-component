@@ -8,11 +8,11 @@
   body {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
       height: 100vh;
       background-color: hsl(212, 45%, 89%);
-      color: black;
+      color: hsl(218, 44%, 22%);
       font-family: 'Outfit';
   }
 
@@ -28,6 +28,9 @@
       border-radius: 20px;
       row-gap: 26px;
       line-height: 1.2;
+      margin-block: auto;
+      /* centers the content vertically */
+      /* can also use margin: auto 0, TOP/BOTTOM : auto | LEFT/RIGHT : 0 */
   }
 
   img {
@@ -51,9 +54,27 @@
   }
 
   .attribution {
-      font-size: 11px;
+      font-size: 15px;
   }
 
   .attribution a {
       color: hsl(0, 0%, 7%);
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 4px;
+      /*rounded for the future outline */
+      transition: all 0.2s ease;
+  }
+
+  .attribution a:focus-visible {
+      outline: 2px solid hsl(218, 44%, 22%);
+      /*We create a high-contrast indicator */
+      outline-offset: 3px;
+      /* We push the edge outwards */
+  }
+
+  /* Hover (Mouse) */
+  .attribution a:hover {
+      text-decoration: underline;
+      color: hsl(218, 44%, 22%);
   }
