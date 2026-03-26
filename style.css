@@ -26,7 +26,6 @@
       padding: 16px;
       padding-bottom: 40px;
       border-radius: 20px;
-      row-gap: 26px;
       line-height: 1.2;
       margin-block: auto;
       /* centers the content vertically */
@@ -40,11 +39,15 @@
   }
 
   .text {
-      padding-inline: 16px;
+      padding: 24px 16px 0;
+      /* TOP: 24px | RIGHT: 16px | BOTTOM: 0 | LEFT: 16px */
       font-size: 15px;
       row-gap: 16px;
       text-align: center;
+  }
 
+  p {
+      color: hsl(216, 15%, 48%);
   }
 
   h1 {
